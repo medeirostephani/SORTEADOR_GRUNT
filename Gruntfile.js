@@ -104,5 +104,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
     grunt.registerTask('default', ['watch']); /*DEFAULT É A TAREFA "PRINCIPAL"*/
-    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'clean', 'ugligy']); /*para adicionar as execuções das tarefas ao chamar a função "build"*/
+    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'clean', 'uglify']); /*para adicionar as execuções das tarefas ao chamar a função "build"*/
 }
