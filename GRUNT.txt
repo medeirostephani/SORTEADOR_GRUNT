@@ -1,0 +1,24 @@
+Powershell
+
+1. ir até a pasta (cd 'C:\EBAC\FRONTEND\17.GRUNT')
+2. npm i -g grunt-cli
+3. npm init +enter
+4. npm i --save-dev grunt
+5. no package.json, em scripts, add:
+"grunt": "grunt",
+6. cria arquivo Gruntfile.js
+7. module.exports = function(grunt) {
+    grunt.initConfig ({
+        pkg: grunt.file.readJSON('package.json'),
+    })
+}
+8. npm run grunt
+
+*COMPILA LESS*
+1. npm install --save-dev grunt-contrib-less
+
+*TAREFAS EM PARALELO*
+npm install --save-dev grunt-concurrent
+
+*WATCH*
+npm install --save-dev grunt-contrib-watch
